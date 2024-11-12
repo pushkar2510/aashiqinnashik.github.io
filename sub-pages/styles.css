@@ -1,0 +1,98 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffe4e1;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #b22222;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.question {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #8b0000;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #b22222;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .result {
+        font-size: 1.1rem;
+    }
+}
