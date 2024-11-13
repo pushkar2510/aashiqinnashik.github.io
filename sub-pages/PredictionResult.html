@@ -4,64 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relationship Prediction Result</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .result-container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            width: 90%;
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .result {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #34495e;
-            margin-top: 10px;
-        }
-        .back-link {
-            margin-top: 20px;
-            display: inline-block;
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .back-link:hover {
-            color: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="PredictionResultStyles.css">
 </head>
 <body>
-    <div class="result-container">
+    <div class="result-container" id="result-container">
         <h1>Your Relationship Prediction</h1>
         <div class="result" id="result">Loading...</div>
         <a href="Prediction.html" class="back-link">Try Again</a>
     </div>
 
-    <script>
-        // Get the result text from the URL parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const resultText = urlParams.get('result');
-
-        // Display the result text
-        document.getElementById('result').textContent = resultText || "No result found.";
-    </script>
+    <script src="resultScript.js"></script>
 </body>
 </html>
